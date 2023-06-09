@@ -35,6 +35,11 @@ $ git clone https://github.com/skkwan/hls4ml.git
 $ mv -r hls4ml/ hls4ml-repo/
 $ cp hls4ml-repo/ hls4ml/ 
 ```
+$ git clone https://github.com/skkwan/hls4ml.git
+$ mv -r hls4ml/ hls4ml-repo/
+$ cp hls4ml-repo/ hls4ml/ 
+```
+
 
 
 
