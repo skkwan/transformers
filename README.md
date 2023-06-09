@@ -2,20 +2,38 @@
 
 ## Installation (do only once)
 
-Package requirements: keras, tensorflow, jupyter
+```
+conda create -n "env-transformers" python=3.10
+conda activate env-transformers
 
+# pip install all the reqiurements in the hls4ml repo setup.cfg
+pip install calmjs.parse
+pip install h5py
+pip install numpy
+pip install onnx>=1.4.0
+pip install pydigitalwavetools==1.1
+pip install pyyaml
+pip install qkeras
+pip install six
+pip install tabulate
+
+# And a few more that are missing from setup.cfg as of June 9, 2023 (hls4ml commit 0599cca)
+pip install tensorflow
+pip install pyparsing
 ```
-$ git clone git@github.com:skkwan/hls4ml.git
-$ python3 -m venv env-transformer
-$ source env-transformer/bin/activate
-(env-transformer) $ pip install --upgrade pip
-(env-transformer) $ pip install -r requirements.txt 
+
+Slightly hacky way to get `hls4ml` code:
 ```
+$ git clone https://github.com/skkwan/hls4ml.git
+$ mv -r hls4ml/ hls4ml-repo/
+$ cp hls4ml-repo/ hls4ml/ 
+```
+
 
 
 ## Setup (start of each session)
 ```
-$ source env-transformers/bin/activate
+$ conda activate env-transformers
 ```
 
 In a different terminal on my own computer, set up tunneling
