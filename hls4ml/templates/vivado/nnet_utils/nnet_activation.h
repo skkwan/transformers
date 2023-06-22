@@ -84,7 +84,9 @@ template <class data_T, class res_T, typename CONFIG_T> void gelu(data_T data[CO
     data_T datareg;
     for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
         datareg = data[ii];
-        res[ii] = (datareg * (1/2) * (1 + hls::erf(datareg/ hls::sqrt(2) ) )  );
+        std::cout << hls::sqrt(2) << std::endl;
+        res[ii] = hls::sqrt(2);
+        // (datareg * (1/2) * (1 + hls::erf(datareg/ hls::sqrt(2) ) )  );
     }
 }
 
