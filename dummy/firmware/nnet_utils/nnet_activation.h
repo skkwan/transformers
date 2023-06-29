@@ -76,7 +76,7 @@ template <class data_T, class res_T, typename CONFIG_T> void relu1(data_T data[C
 }
 
 // *************************************************
-//       GELU Activation: NOTE: workflow is currently modifying the nnet_activation.h in the Vivado source file, so this will not be updated
+//       GELU Activation
 // *************************************************
 template <class data_T, class res_T, typename CONFIG_T> void gelu(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in]) {
     #pragma HLS PIPELINE

@@ -25,9 +25,11 @@ def main():
     y_keras = model.predict(x).flatten()
     print(y_keras)
 
-    # HLS output
-    y_hls = hls_model.predict(x)
-    print(y_hls)
+    # HLS output: do not predict
+    # y_hls = hls_model.predict(x)
+    # print(y_hls)
+
+    hls_model.build
 
 
 if __name__ == "__main__":
