@@ -7,8 +7,7 @@ int main () {
     input_t myInput[N_INPUT_1_1] = {-3.0, -1.0, 0.0, 1.0, 3.0};
     result_t myOutput[N_INPUT_1_1];
 
-    // [-0.00404969409489031, -0.15865525393145702, 0.0, 0.841344746068543, 2.99595030590511]
-    result_t goldenOutput[N_INPUT_1_1] = {-0.002929, -0.158203, 0, 0.84028, 2.99512};
+    result_t goldenOutput[N_INPUT_1_1] = {-0.00404969409489031, -0.15865525393145707, 0.0, 0.8413447460685429, 2.99595030590511};
 
     // Execute the function 
     myproject(myInput, myOutput);

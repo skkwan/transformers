@@ -82,11 +82,13 @@ template <class data_T, class res_T, typename CONFIG_T> void gelu(data_T data[CO
     #pragma HLS PIPELINE
 
     data_T datareg;
+    data_T argument;
     for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
         datareg = data[ii];
-        res[ii] = datareg * ((data_T) (1.0/2.0)) * (1 + hls::erf(datareg/ ((data_T) hls::sqrt(2.0)))); ///(datareg * (1/2) * (1 + hls::erf(datareg/ ((data_T) hls::sqrt(2.0)) ) ));
+        argument = ((data_T) hls::sqrt(M_2_PI)) * (datareg + ( ((data_T) 0.044715) * (datareg * datareg * datareg)));
+        res[ii] = ((data_T) 0.5) * datareg * (1 + ((data_T) hls::sinh(argument)) / hls::cosh(argument));
     }
-}
+}   
 
 // *************************************************
 //       Sigmoid Activation
