@@ -4,8 +4,8 @@
 #include "ap_fixed.h"
 #include "ap_int.h"
 
-#include "nnet_utils/nnet_code_gen.h" // commenting this out
-#include "nnet_utils/nnet_helpers.h" // commenting this out
+#include "nnet_utils/nnet_code_gen.h" 
+#include "nnet_utils/nnet_helpers.h" 
 // hls-fpga-machine-learning insert includes
 #include "nnet_utils/nnet_activation.h"
 #include "nnet_utils/nnet_activation_stream.h"
