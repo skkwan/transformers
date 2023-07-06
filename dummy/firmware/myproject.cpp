@@ -1,7 +1,6 @@
 #include <iostream>
 
 #include "myproject.h"
-#include "parameters.h"
 
 void myproject(
     input_t input_1[N_INPUT_1_1],

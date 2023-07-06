@@ -19,7 +19,6 @@ struct gelu_config2 : nnet::activ_config {
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
-    typedef gelu1_table_t table_t;
 };
 
 

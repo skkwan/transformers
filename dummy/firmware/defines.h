@@ -14,6 +14,10 @@
 // hls-fpga-machine-learning insert layer-precision
 typedef ap_fixed<16,6> input_t;
 typedef ap_fixed<16,6> result_t;
-typedef ap_fixed<18,8> gelu1_table_t;
+typedef ap_fixed<18,8> table_t;
+
+#define TABLE_SIZE 1024
+
+
 
 #endif
