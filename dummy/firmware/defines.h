@@ -8,8 +8,8 @@
 #include <cstdio>
 
 // hls-fpga-machine-learning insert numbers
-#define N_INPUT_1_1 5
-#define N_INPUT_1_1 5
+#define N_INPUT_1_1 100
+#define N_INPUT_1_1 100
 
 // hls-fpga-machine-learning insert layer-precision
 typedef ap_fixed<16,6> input_t;

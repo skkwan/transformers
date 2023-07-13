@@ -15,7 +15,7 @@
 // hls-fpga-machine-learning insert layer-config
 // gelu1
 struct gelu_config2 : nnet::activ_config {
-    static const unsigned n_in = 5;
+    static const unsigned n_in = 100;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
